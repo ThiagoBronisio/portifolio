@@ -1,0 +1,39 @@
+.container {
+  padding: 100px 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    padding: 25px 50px;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    padding: 25px 16px;
+    justify-content: center;
+  }
+
+  &__wrapper-apresentation {
+    @media (max-width: 1024px) {
+      text-align: center;
+      width: 100%;
+    }
+    :first-child {
+      color: var(--green-100);
+      font-family: var(--baloo);
+      font-size: 30px;
+    }
+    h1 {
+      margin: 15px 0;
+      color: var(--white);
+      font-size: 60px;
+      font-family: var(--roboto);
+    }
+    :last-child {
+      color: var(--white);
+      font-family: var(--roboto);
+      font-size: 30px;
+    }
+  }
+}

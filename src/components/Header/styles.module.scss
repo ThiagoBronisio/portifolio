@@ -1,5 +1,5 @@
 .container {
-  padding: 30px 150px;
+  padding: 30px 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +33,10 @@
 
   &__links {
     width: 100%;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
 
     ul {
       display: flex;

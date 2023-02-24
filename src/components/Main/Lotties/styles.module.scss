@@ -3,4 +3,7 @@
   div {
     width: 100% !important;
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }

@@ -1,5 +1,5 @@
 .container {
-  padding: 50px 150px;
+  padding: 50px 120px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -22,9 +22,17 @@
       width: 100%;
     }
 
-    div {
-      width: 50%;
+    div:first-child {
+      width: 60%;
       margin: auto;
+      @media (max-width: 1024px) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    div {
+      width: 40%;
     }
 
     h1 {
@@ -32,16 +40,26 @@
       color: var(--white);
       font-size: 60px;
       font-family: var(--baloo);
+      @media (max-width: 1280px) {
+        font-size: 45px;
+        line-height: 60px;
+      }
     }
     h2:first-child {
       color: var(--green-100);
       font-family: var(--roboto);
       font-size: 30px;
+      @media (max-width: 1280px) {
+        font-size: 20px;
+      }
     }
     h2 {
       color: var(--white);
       font-family: var(--roboto);
       font-size: 30px;
+      @media (max-width: 1280px) {
+        font-size: 20px;
+      }
     }
   }
 }

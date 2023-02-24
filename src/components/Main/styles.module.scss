@@ -1,5 +1,5 @@
 .container {
-  padding: 100px 150px;
+  padding: 50px 150px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -15,22 +15,30 @@
   }
 
   &__wrapper-apresentation {
+    display: flex;
+
     @media (max-width: 1024px) {
       text-align: center;
       width: 100%;
     }
-    :first-child {
-      color: var(--green-100);
-      font-family: var(--baloo);
-      font-size: 30px;
+
+    div {
+      width: 50%;
+      margin: auto;
     }
+
     h1 {
       margin: 15px 0;
       color: var(--white);
       font-size: 60px;
-      font-family: var(--roboto);
+      font-family: var(--baloo);
     }
-    :last-child {
+    h2:first-child {
+      color: var(--green-100);
+      font-family: var(--roboto);
+      font-size: 30px;
+    }
+    h2 {
       color: var(--white);
       font-family: var(--roboto);
       font-size: 30px;

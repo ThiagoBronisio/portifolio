@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background1);
 
   @media (max-width: 1024px) {
     padding: 25px 50px;
@@ -16,6 +17,10 @@
     width: 420px;
     cursor: pointer;
 
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
     span {
       font-size: 25px;
       display: flex;
@@ -25,6 +30,28 @@
 
     h2 {
       padding: 0 10px;
+      color: var(--white);
+      font-family: var(--roboto);
+      letter-spacing: 2px;
+    }
+  }
+
+  &__logo-mobile {
+    display: flex;
+    cursor: pointer;
+    @media (min-width: 1025px) {
+      display: none;
+    }
+
+    span {
+      font-size: 25px;
+      display: flex;
+      align-items: flex-end;
+      color: var(--green-100);
+    }
+
+    h2 {
+      padding: 0 5px;
       color: var(--white);
       font-family: var(--roboto);
       letter-spacing: 2px;

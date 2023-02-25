@@ -8,6 +8,7 @@ const Main = () => {
 
     return (
         <main className={styles["container"]}>
+
             <section className={styles["container__wrapper-apresentation"]}>
                 <div>
                     <Apresentation greet="Olá, meu nome é" name="Thiago Bronisio" work="Desenvolvedor Web" />
@@ -15,6 +16,8 @@ const Main = () => {
                 </div>
                 <Lotties />
             </section>
+
+
         </main>
     )
 }

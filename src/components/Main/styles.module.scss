@@ -1,24 +1,19 @@
 .container {
-  padding: 50px 120px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-
-  @media (max-width: 1024px) {
-    padding: 25px 50px;
-    justify-content: center;
-  }
-  @media (max-width: 768px) {
-    padding: 25px 16px;
-    justify-content: center;
-  }
-
   &__wrapper-apresentation {
     display: flex;
+    padding: 50px 120px;
+    background-color: var(--background1);
 
     @media (max-width: 1024px) {
+      padding: 25px 50px;
       text-align: center;
+    }
+    @media (max-width: 768px) {
+      padding: 25px 16px;
+      justify-content: center;
+    }
+
+    @media (max-width: 1024px) {
       width: 100%;
     }
 
@@ -61,5 +56,9 @@
         font-size: 20px;
       }
     }
+  }
+
+  &__wrapper-sobreMim {
+    background-color: var(--background2);
   }
 }

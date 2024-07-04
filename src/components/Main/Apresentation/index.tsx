@@ -1,10 +1,7 @@
-import React from "react"
-
 interface ApresentationProps {
     greet: string,
     name: string,
     work: string
-
 }
 
 const Apresentation = (props: ApresentationProps) => {

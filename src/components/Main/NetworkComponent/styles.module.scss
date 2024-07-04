@@ -18,6 +18,7 @@
     width: 55px;
     border: 1px solid var(--white);
     border-radius: 50%;
+    cursor: pointer;
     @media (max-width: 1280px) {
       height: 45px;
       width: 45px;
@@ -28,6 +29,11 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+
+    &:hover {
+      background-color: #7c7c7c1b;
+      transition: 0.5s all;
     }
 
     a {

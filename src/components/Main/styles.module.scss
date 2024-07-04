@@ -1,8 +1,8 @@
 .container {
+  background-color: var(--background1);
   &__wrapper-apresentation {
     display: flex;
     padding: 50px 120px;
-    background-color: var(--background1);
 
     @media (max-width: 1024px) {
       padding: 25px 50px;
@@ -31,9 +31,9 @@
     }
 
     h1 {
-      margin: 15px 0;
+      margin: 12px 0;
       color: var(--white);
-      font-size: 60px;
+      font-size: 50px;
       font-family: var(--baloo);
       @media (max-width: 1280px) {
         font-size: 45px;
@@ -60,5 +60,15 @@
 
   &__wrapper-sobreMim {
     background-color: var(--background2);
+  }
+
+  &__wrapper-projeto {
+    display: block;
+    margin: 30px 80px;
+    
+
+    &__content {
+      display: flex;
+    }
   }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss"
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState } from "react";
+import { SkilFlag } from "../SkilFlag";
 
 interface InfoProject {
     titleProject: string,
@@ -10,35 +12,37 @@ interface InfoProject {
     textLinkFront?: string,
     textLinkBack?: string,
     urlLinkFront?: string,
-    urlLinkBack?: string
+    urlLinkBack?: string,
+    skills: string[]
 }
 
 const Projeto = (props: InfoProject) => {
 
     const [loadedImage, setLoadedImage] = useState<string>(props.image);
 
-    const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.files && event.target.files[0]) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setLoadedImage(reader.result as string);
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-
     return (
         <div className={styles["container-project"]}>
             <div className={styles["container-project__wrapper-project"]}>
-                <h3>{props.titleProject}</h3>
-                <img src={loadedImage} alt={props.textAlternative} />
-                <p>{props.description}</p>
-
-                <div className={styles["container-project__wrapper-project__links"]}>
-                    <a href={props.urlLinkFront} type="button" >{props.textLinkFront}</a>
-                    <a href={props.urlLinkBack} type="button" >{props.textLinkBack}</a>
+                <div className={styles["container-project__wrapper-project__content-img"]}>
+                    <img src={loadedImage} alt={props.textAlternative} />
                 </div>
+
+                <div className={styles["container-project__wrapper-project__content-infoProject"]}>
+                    <h3>{props.titleProject}</h3>
+                    <p>{props.description}</p>
+                    {props.skills.map((skill, index) => (
+                        <SkilFlag key={index} skill={skill} />
+                    ))}x
+                    <div className={styles["container-project__wrapper-project__content-infoProject__links"]}>
+                        <a href={props.urlLinkFront} type="button" >{props.textLinkFront}
+                            <FaLongArrowAltRight />
+                        </a>
+                        <a href={props.urlLinkBack} type="button" >{props.textLinkBack}
+                            <FaLongArrowAltRight />
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

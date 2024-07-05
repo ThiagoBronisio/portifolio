@@ -2,7 +2,14 @@
   background-color: var(--background1);
   &__wrapper-apresentation {
     display: flex;
-    padding: 50px 120px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding: 80px 0 110px 0;
 
     @media (max-width: 1024px) {
       padding: 25px 50px;
@@ -18,8 +25,6 @@
     }
 
     div:first-child {
-      width: 60%;
-      margin: auto;
       @media (max-width: 1024px) {
         margin: 0;
         width: 100%;
@@ -27,48 +32,59 @@
     }
 
     div {
-      width: 40%;
+      width: 400px;
     }
 
     h1 {
       margin: 12px 0;
       color: var(--white);
-      font-size: 50px;
-      font-family: var(--baloo);
-      @media (max-width: 1280px) {
-        font-size: 45px;
-        line-height: 60px;
-      }
+      font-size: 38px;
+      font-family: var(--poppins);
     }
     h2:first-child {
       color: var(--green-100);
       font-family: var(--roboto);
-      font-size: 30px;
-      @media (max-width: 1280px) {
-        font-size: 20px;
-      }
+      font-size: 20px;
     }
     h2 {
       color: var(--white);
       font-family: var(--roboto);
-      font-size: 30px;
-      @media (max-width: 1280px) {
-        font-size: 20px;
-      }
+      font-size: 20px;
     }
   }
 
-  &__wrapper-sobreMim {
-    background-color: var(--background2);
-  }
-
   &__wrapper-projeto {
-    display: block;
-    margin: 30px 80px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 128px;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
+    &__title-project{
+      color: var(--white);
+      font-family: var(--poppins);
+      font-size: 28px;
+    }
+    
     &__content {
       display: flex;
+    }
+  }
+
+  &__wrapper-skills {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &__title-skill{
+      color: var(--white);
+      font-family: var(--poppins);
+      font-size: 28px;
     }
   }
 }

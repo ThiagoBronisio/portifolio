@@ -4,16 +4,14 @@ import '../styles/variables.scss'
 
 import { Header } from "../components/Header/index"
 import { Main } from "../components/Main/index"
+import { Footer } from '../components/Footer';
 
 function App() {
   return (
     <>
       <Header />
       <Main />
-
-      <footer>
-
-      </footer>
+      <Footer />
     </>
   );
 }

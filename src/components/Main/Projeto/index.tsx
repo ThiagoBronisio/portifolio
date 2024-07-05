@@ -32,7 +32,7 @@ const Projeto = (props: InfoProject) => {
                     <p>{props.description}</p>
                     {props.skills.map((skill, index) => (
                         <SkilFlag key={index} skill={skill} />
-                    ))}x
+                    ))}
                     <div className={styles["container-project__wrapper-project__content-infoProject__links"]}>
                         <a href={props.urlLinkFront} type="button" >{props.textLinkFront}
                             <FaLongArrowAltRight />

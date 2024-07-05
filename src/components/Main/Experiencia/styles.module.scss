@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+
+    &__intro {
+
+
+        h3 {
+            color: var(--white);
+            font-family: var(--poppins);
+            font-size: 28px;
+        }
+
+        p {
+            font-family: var(--poppins);
+            color: #9ca3af;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+    &__contend-separator {
+        display: flex;
+        width: 40px;
+        flex-direction: column;
+        justify-content: center;
+
+        &__rounded {
+            margin-bottom: 10px;
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            margin: 5px auto;
+            background-color: var(--green-100);
+        }
+
+        &__seprator {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            width: 1px;
+            border: 1px solid #1f2937;
+            height: 86%;
+        }
+    }
+
+    &__separatorEinfo {
+        display: flex;
+        margin-left: 20px;
+
+
+        &__wrapper-info {
+            display: flex;
+            flex-direction: column;
+
+            &__content-descricao {
+                h3 {
+                    font-family: var(--poppins);
+                    color: var(--green-100);
+                }
+
+                &__cargo {
+                    color: #D1D5DB;
+                    font-family: var(--poppins);
+                    font-weight: bolder;
+                    margin: 5px 0;
+                    font-size: 14px;
+                }
+
+                &__tempo {
+                    color: #6b7280;
+                    font-family: var(--poppins);
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
+
+                &__descricao {
+                    color: #93acaf;
+                    font-family: var(--poppins);
+                    font-size: 14px;
+                    margin-bottom: 15px
+                }
+            }
+
+            &__content-skils {
+
+                h3 {
+                    color: #93acaf;
+                    font-family: var(--poppins);
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+
+                    span {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
